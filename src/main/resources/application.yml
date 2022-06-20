@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: pet-system
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+  main:
+    allow-bean-definition-overriding: true
+  # 文件上传
+  servlet:
+    multipart:
+      # 单个文件大小
+      max-file-size:  1000MB
+      # 设置总上传的文件大小
+      max-request-size:  2000MB
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_petdiet?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 9001
+
+#日志
+logging:
+  level:
+    com.cjw.pet: debug
+    org.springframework: warn
+#操作数据库的设置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+# 项目相关配置
+petsys:
+  # 名称
+  name: pet
+  # 版本
+  version: 1.0.0
+  # 版权年份
+  copyrightYear: 2022
+  # 文件路径 示例（ Windows配置D:/项目名/uploadPath，Linux配置 /home/项目名/uploadPath）
+  profile: D:/pnbr-system/uploadPath
