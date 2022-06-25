@@ -5,7 +5,7 @@
 3.主要框架：Spring + SpringMVC + Mybatis <br/>
 4.包管理：Maven 3.6.1<br/>
 5.数据库：MySQL 8.0<br/>
-6.开发环境：IntelliJ IDEA、Hbuilder X和微信开发者工具<br/>
+6.开发环境：IntelliJ IDEA、Hbuilder X、微信开发者工具<br/>
 7.浏览器：Chrome<br/>
 <br/>
 <br/>
